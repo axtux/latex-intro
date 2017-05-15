@@ -2,4 +2,7 @@
 *.aux
 *.log
 *tex.gz
-
+*.nav
+*.out
+*.snm
+*.toc
