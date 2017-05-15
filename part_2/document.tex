@@ -1,0 +1,67 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{enumerate}
+
+\begin{document}
+	\begin{tabular}{|l||c|c|c|c||r|}
+		\hline
+		Nationalité & O & A & B & AB & Population \\
+		\hline\hline
+		Egyptiens & 33 & 36 & 23 & 8 & 81 713 517 \\
+		Français & 43 & 47 & 7 & 3 & 65 073 482 \\
+		Japonais & 30 & 38 & 22 & 10 & 127 288 419 \\
+		Malais & 62 & 18 & 20 & 0 & 25 274 133 \\
+		Mexicains & 97 & 1 & 1 & 1 & 106 682 500 \\
+		\hline
+	\end{tabular}
+	\begin{equation*}
+		\jmath =
+		\begin{pmatrix}
+			\frac{\partial h_1}{\partial x_1}(x) &
+			\frac{\partial h_1}{\partial x_2}(x) \\[3mm]
+			\frac{\partial h_2}{\partial x_1}(x) &
+			\frac{\partial h_2}{\partial x_2}(x) \\
+		\end{pmatrix}	
+	\end{equation*}
+	\begin{equation*}
+		\Psi (t) = E[e^{eitX}] = 
+		\begin{cases}
+			\displaystyle\sum_{j=1}^{n} e^{itx_j}p(x_j) & \text{cas discret} \\
+			\displaystyle\int_{+\inf}^{-\inf} e^{itx} f(x)\text{d}x&
+			\text{cas continu} \\
+		\end{cases}
+	\end{equation*}
+	
+	\noindent Les assertions suivantes sont équivalentes :
+	\begin{enumerate}[(1)]
+		\item $X_n \overset{p.s.}\longrightarrow X,$
+		\item $\forall \varepsilon > 0,\ P \Big(\varlimsup\limits_{n\rightarrow +\inf} \{|X_n - X| > \varepsilon\} \Big) = 0,$
+		\item $\forall \varepsilon > 0,\ P \Big(\underset{k \geqslant n}{\text{sup}} |X_k - X| > \varepsilon\Big) \xrightarrow{n\rightarrow +\inf} 0.$
+	\end{enumerate}
+	\begin{equation*}
+		\displaystyle\int_{0}^{\pi} \text{sin}\ x\ \text{d}x = 2
+	\end{equation*}
+	\begin{equation*}
+		\int_{0}^{1}\int_{0}^{1} f(x,y)\ \text{d}x\ \text{d}y
+	\end{equation*}
+	\begin{equation*}
+		x = y \Leftrightarrow x^3 = y^3
+	\end{equation*}
+	
+	\noindent
+	C'est à gauche\hfill c'est à droite \\
+	C'est à gauche\hfill c'est au milieu\hfill c'est à droite
+	
+	\noindent
+	Voici une phrase qui contient beaucoup de mots, évidemments.\\
+	Voici une phrase qui contient \phantom{beaucoup} de mots, évidemments.\\
+	
+	\begin{proof}
+		\proofname{MaDemo} \\
+		Demo ici \\
+	\end{proof}
+	
+\end{document}

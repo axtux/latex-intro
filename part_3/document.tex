@@ -1,0 +1,80 @@
+\documentclass[12pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+
+\begin{document}
+	\author{Mich-Mich}
+	\title{Un petit exemple de Beamer}
+	\institute{Université de Mons}
+	\frame{\maketitle}
+	\begin{frame}
+		\frametitle{Table des matières}
+		\begin{enumerate}
+			\item Énumérations
+			\item Blocs
+			\item Sur deux colonnes
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Le master en mathématiques à l'UMONS}
+		Les finalités du master en mathématiques
+		\begin{enumerate}
+			\item finalité approfondie
+			\item finalité spécialisée
+			\item finalité didactique
+		\end{enumerate}
+		Les programmes
+		\begin{itemize}
+			\item Tronc commun
+			\item Cours et stages de finalité
+			\item Mémoire
+			\item Projet intégré
+			\item Cours au grand choix
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{La Chat}
+		\begin{alertblock}{Le chat}	
+			Le Chat est une série de bande dessinée créée par Philippe Geluck qui met en scène le héros éponyme dans de nombreux gags.
+		\end{alertblock}
+		\begin{exampleblock}{Exemple de phrases}
+			\begin{itemize}
+				\item Pour voir qu'il fait noir, on n'a pas besoin de lumière.
+				\item Si les lentilles vous font péter, portez des lunettes.
+				\item Le coup du lapin ça doit être terrible chez la girafe.
+				\item Je préfère le vin d'ici à l'eau de là.
+				\item Contrairement à ce que l'on pourrait croire, Germinal n'est pas une ouvre mineure.
+				\item Au pays des cyclopes, les borgnes sont aveugles.
+			\end{itemize}
+		\end{exampleblock}
+	\end{frame}
+	\begin{frame}
+		\frametitle{De quoi passer son temps...}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Avec une image maintenant}
+		\begin{figure}[b]
+			\includegraphics[scale=0.6,angle=90]{umons.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Et du code}
+	\end{frame}
+	\begin{verbatim}
+	var i = 0;
+	var max = 0;
+	for(i in tab) {
+	if(i > max) {
+	max = i;
+	}
+	}
+	return max;
+	\end{verbatim}
+\end{document}
